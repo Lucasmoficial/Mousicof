@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mousic - Home</title>
+    <link rel="stylesheet" href="Principal.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo">Mousic</div>
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar músicas, álbuns, artistas...">
+        </div>
+        <div class="nav-icons">
+            <a href="#">Home</a>
+            <a href="#">Explorar</a>
+            <a href="#">Biblioteca</a>
+            <a href="#">Favoritos</a>
+            <a href="#">Perfil</a>
+        </div>
+    </header>
+
+    <!-- Menu Lateral -->
+    <aside>
+        <ul>
+            <li><a href="#">Minhas Playlists</a></li>
+            <li><a href="#">Artistas Seguidos</a></li>
+            <li><a href="#">Álbuns</a></li>
+            <li><a href="#">Gêneros</a></li>
+        </ul>
+        <button class="new-playlist">+ Nova Playlist</button>
+    </aside>
+
+    <!-- Conteúdo Principal -->
+    <main>
+        <!-- Banner Principal -->
+        <section class="banner">
+            <h1>Destaque do Momento</h1>
+            <button>Ouça Agora</button>
+        </section>
+
+        <!-- Playlists Recomendadas -->
+        <section class="recommended">
+            <h2>Playlists Recomendadas para Você</h2>
+            <div class="playlist-cards">
+                <div class="playlist-card">
+                    <img src="capa1.jpg" alt="Capa da Playlist">
+                    <h3>Nome da Playlist</h3>
+                </div>
+                <!-- Repita os cards conforme necessário -->
+            </div>
+        </section>
+
+        <!-- Músicas em Alta -->
+        <section class="trending">
+            <h2>Em Alta Agora</h2>
+            <ul>
+                <li>
+                    <span>Nome da Música - Artista</span>
+                    <button>Play</button>
+                </li>
+                <!-- Repita para outras músicas -->
+            </ul>
+        </section>
+
+        <!-- Descoberta de Novos Sons -->
+        <section class="discover">
+            <h2>Descubra Novos Sons</h2>
+            <div class="genres">
+                <button>Pop</button>
+                <button>Rock</button>
+                <button>Sertanejo</button>
+                <!-- Adicione mais gêneros -->
+            </div>
+            <div class="new-artists">
+                <h3>Novos Artistas</h3>
+                <!-- Adicione conteúdo sobre novos artistas -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Reprodutor de Música Fixo -->
+    <footer class="music-player">
+        <div class="player-info">
+            <img src="album.jpg" alt="Capa do Álbum">
+            <div>
+                <span>Nome da Música</span>
+                <span>Artista</span>
+            </div>
+        </div>
+        <div class="player-controls">
+            <button>Prev</button>
+            <button>Play</button>
+            <button>Next</button>
+        </div>
+        <div class="volume-control">
+            <input type="range" min="0" max="100" value="50">
+        </div>
+    </footer>
+
+    <script src="Principal.js"></script>
+</body>
+</html>
+
